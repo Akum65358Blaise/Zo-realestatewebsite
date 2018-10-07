@@ -1,0 +1,344 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin-top: 0px;
+		font-family: sans-serif;
+
+	}
+	nav{
+		width:100%;
+		height:80px;
+		background-color:#222323;
+		color:#fff;
+		position: fixed;
+	}
+	nav ul{
+		list-style: none;
+		text-align: right;
+	}
+	nav ul li{
+		display: inline-block;
+		text-align: center;
+		height: 80px;
+		line-height: 80px;
+		width:130px;
+		position: relative;
+		font-size: 12pt;
+		text-transform: uppercase;
+	}
+	nav ul li a{
+		text-decoration: none;
+		color:#fff;
+		display: block;
+	}
+	nav h3{
+		height:80px;
+		line-height: 80px;
+		margin-left: 20px;
+		float:left;
+		font-size: 22pt;
+	}
+	.home{
+		width:100%;
+		height: 600px;
+		background-image: url(7.jpg);
+		background-size: 100% auto;
+		padding-top: 60px;
+		background-position: 0px 55px;
+	}
+	.services{
+		width:100%;
+		height: 550px;
+		padding-top:100px;
+	}
+	.services h2 ,.products h2,.gallery h2{
+		height:79px;
+		text-align: center;
+		line-height: 60px;
+		font-size: 20pt;
+		text-transform: uppercase;
+	}
+	.home div{
+		width:500px;
+		height: 200px;
+		position: absolute;
+		left:0px;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		margin:auto;
+		text-align: center;
+		color:#fff;
+		text-shadow:1px 1px 5px #000;
+		line-height: 1.5;
+	}
+	.home div h1{
+		font-size: 30pt;
+
+	}
+	.home div h2{
+		font-size: 16pt;
+		letter-spacing: 4px;
+
+	}
+	.home div h3{
+		font-size: 12pt;
+		height:80px;
+		line-height: 80px;
+		width:150px;
+		border:2px solid #fff;
+		text-align: center;
+		margin:auto;
+		font-weight: normal;
+		letter-spacing: 1px;
+		margin-top:50px;
+		transition: background-color 0.7s linear;
+
+	}
+	.home div h3:hover{
+		background-color: #fff;
+		color:#222;
+		text-shadow: 0px 0px 0px #000;
+
+	}
+	nav h3 span:first-child{
+		color:#00D8F8;border-top:4px solid #00D8F8;
+	}
+	nav h3 span:last-child{
+		border-bottom:4px solid #fff;
+	}
+    nav ul li a:hover::before{
+    	content: '';
+    	border:20px solid #00D8F8;
+    	position:absolute;
+    	left:0px;
+    	top:0px;
+    	right:0px;
+    	border-color:   transparent   transparent #00D8F8 transparent;
+    	transform: rotate(180deg);
+    }
+    nav ul li a:hover::after{
+    	content: ' ';
+    	border:20px solid #00D8F8;
+    	position:absolute;
+    	left:0px;
+    	right:0px;
+    	bottom:0px;
+    	border-color:#00D8F8 transparent transparent transparent;
+    	transform: rotate(180deg);
+    }
+
+	.services div{
+		width:90%;
+		margin: auto;
+		text-align:justify;
+		line-height: 1.8;
+			box-shadow: 0px 0px 10px #222;
+			padding: 30px;
+
+	}
+	.services div img{
+		width:450px;
+		border:5px solid #fff;
+		float:left;
+		margin-right: 20px;
+
+
+	}
+	.services div span{
+		display: block;
+		text-align: right;
+		font-size:16pt;
+		color:#06A0CC;
+		font-weight:bold;
+	}
+.products{
+	width:80%;
+	height:550px;
+	padding: 30px;
+	text-align: center;
+	color: #444;
+}
+.products .course-row,.gallery .gallery-row{
+	width:95%;
+	margin: auto;
+	height:450px;
+	display: flex;
+	text-align:center;
+}
+.products .course-row .course-item{
+	width:30%;
+	margin: auto;
+	height:400px;
+	box-shadow: 0px 0px 10px #000;
+	color:#222;
+	transition: background-color 1s linear,color 0.3s linear;
+	border-radius: 10px;
+
+
+}
+.products .course-row .course-item img{
+	width:90%;
+	margin: auto;
+	height:230px;
+	padding-top:10px;
+		border-radius: 10px;
+
+
+}
+.products .course-row .course-item:hover{
+	background-color:#222;
+	color:#fff;
+
+}
+.gallery .gallery-row .gallery-item{
+	width:260px;
+	height:270px;
+padding:10px;
+	box-shadow: 1px 1px 10px #222;
+	margin:15px;
+	border-radius:50px 0px 50px 0px
+
+
+}
+.gallery-item img{
+	width:95%;
+	height:200px;
+	border-radius:50px 0px 50px 0px
+}
+.gallery-item h2{
+	font-size:12pt;
+	padding-top:20px;
+	line-height:1.8;
+
+}
+.gallery .gallery-row{
+	width:95%;
+	margin: auto;
+	height:300px;
+	display: flex;
+	text-align:center;
+}
+.gallery-item:hover{
+	background-color:#222;
+	color:#fff;
+
+}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<h3> <span>ZO-ONLINE</span><span> REAL-ESTATE LTD</span></h3>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#products">Products</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</nav>
+   <section class="home" id="home">
+   	<div>
+   		<h1>ZO-HOMES LIMITED</h1>
+   		<h2> ONLINE REAL-ESTATE SERVICES</h2>
+   		 <h3>SEE MORE</h3>
+   	</div>
+   </section>
+     <section class="services" id="services">
+
+     	  <div>
+					  <h2>Services</h2>
+     	  <img src="3.jpg">
+     	  ZO-ONLINE REAL-ESTATE LIMITED is an online platform designed for the sales and purchase of plots of land,houses and house equipments online.<br/><br/> With ZO-ONLINE REAL-ESTATE LIMITED you can book for a house,property and it will be reserved for you as long as you make some deposits.<br/><br/>This platform has come to solve the problem of people suffering to look for houses and plots of land to buy.we give out our land and property at moderate prices.<br/><br/>
+     	  ZO-ONLINE REAL-ESTATE LIMITED offers the following services
+     	  as far as real-estate is concerned:<br/>
+     	  -Design of plan for houses of all categories and supervision of construction of the houses.
+     	  -Rents/sales of plots of land and houses.
+     	  -Sales of house equipments and building materials.
+				<span> ZO-ONLINE REAL-ESTATE LIMITED</span>
+     	  </div>
+     </section>
+
+       <section class="products" id="products">
+          <h2>Products/Designs</h2>
+					<h3>below are samples of what we have and can offer
+					<div class="course-row">
+
+						<div class="course-item">
+							<img src="4.jpg">
+							<h2> HOME Constructions</h2>
+							<h4>Houses,drainages,safety tanks</h4>
+						</div>
+						<div class="course-item">
+							<img src="5.jpg">
+							<h2>ARCHITECTURAL DESIGNS</h2>
+							<h4>Houses of all categories and its accessories</h4>
+						</div>
+						<div class="course-item">
+							<img src="6.jpg">
+							<h2>Sales of Land/Houses</h2>
+							<h4>Houses/Lands of all categories are available</h4>
+						</div>
+					</div>
+
+
+			 </section>
+         <section class="gallery" id="gallery">
+					 <h2>Gallery</h2>
+
+					 <div class="gallery-row">
+						 <div class="gallery-item">
+							 <img src="im1.jpg">
+							 <h2>LOCATED AT NKWEN BAMENDA</h2>
+						 </div>
+						 <div class="gallery-item">
+							<img src="im2.jpg">
+							<h2>LOCATED AT ALAKUMA BAMENDA</h2>
+						</div>
+						<div class="gallery-item">
+						 <img src="im3.jpg">
+						 <h2>LOCATED AT MILE 90 BAMENDA</h2>
+					 </div>
+					 <div class="gallery-item">
+						<img src="im4.jpg">
+						<h2>LOCATED AT NTASEN BAMENDA</h2>
+					</div>
+					<div class="gallery-item">
+					 <img src="im5.jpg">
+					 <h2>LOCATED AT FONCHA STREET BAMENDA</h2>
+				 </div>
+
+					 </div>
+					 <div class="gallery-row">
+						<div class="gallery-item">
+							<img src="p1.jpg">
+							<h2>LOCATED AT BAMBUI BAMENDA</h2>
+						</div>
+						<div class="gallery-item">
+						 <img src="p2.jpg">
+						 <h2>LOCATED AT CHE STREET BAMENDA</h2>
+					 </div>
+					 <div class="gallery-item">
+						<img src="p3.jpg">
+						<h2>LOCATED AT MANCHO STREET BAMENDA</h2>
+					</div>
+					<div class="gallery-item">
+					 <img src="p4.jpg">
+					 <h2>LOCATED AT BALI PARK BAMENDA</h2>
+				 </div>
+				 <div class="gallery-item">
+					<img src="p5.jpg">
+					<h2>LOCATED AT ABANGOH BAMENDA</h2>
+				</div>
+
+					</div>
+				 </section>
+
+           <section class="contact" id="contact"></section>
+</body>
+</html>
